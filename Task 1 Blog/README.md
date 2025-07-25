@@ -14,10 +14,6 @@ A modern, visually appealing blog page that highlights the impact of digital tec
 - 📱 Mobile-Friendly — Responsive layout for all screen sizes.
 - 🎬 Smooth Animations — Flip, fade, and interaction effects using CSS and JS.
 
-## Prerequisite 
-
-To run this script, you need to have Python installed on your system. (You can download Python from the official website: Python.org.)
-or you can have VS code with pyhton packages.
 
 ### 🚀 Getting Started
 Follow these steps to run the project locally on your system:
