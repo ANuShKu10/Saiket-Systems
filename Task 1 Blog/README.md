@@ -43,10 +43,6 @@ open index.html     # macOS
 xdg-open index.html # Linux
 ```
 
-
-## Usage/Examples
-
-
 ## 💡 Usage / Examples
 
 Here’s how the **Digital Impact Blog** works once opened in a browser:
