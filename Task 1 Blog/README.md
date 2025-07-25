@@ -35,7 +35,7 @@ cd "Saiket-Systems/Task 1 Blog"
 
 🐧 On macOS/Linux:
 ```bash
-cd Saiket-Systems/Task\ 1\ Blog
+cd "Saiket-Systems/Task\ 1\ Blog"
 ```
 
 3. Open the HTML File:
