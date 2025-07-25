@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Impact Blog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://img.freepik.com/premium-photo/technology-background-design-by-using-digital-elements_221397-38.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      backdrop-filter: brightness(0.7);
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #00BFFF;
+    }
+
+    .author {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card.flipped .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .flip-card-front img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .flip-card-back {
+      background-color: rgba(0, 0, 50, 0.85);
+      transform: rotateY(180deg);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .flip-card-back h3 {
+      margin-top: 0;
+      color: #00BFFF;
+    }
+
+    .read-more-btn {
+      padding: 0.6rem 1rem;
+      background-color: #00BFFF;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .read-more-btn:hover {
+      background-color: #009ACD;
+    }
+
+    .extra-content {
+      display: none;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+    }
+
+    .extra-content.show {
+      display: block;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .conclusion {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: rgba(0, 0, 0, 0.6);
+      border-left: 6px solid #00BFFF;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #aaa;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Impact of Digital Technology</h1>
+    <div class="author">By Jayanth Mayur.H | July 2025</div>
+    <p>
+      In today's fast-evolving world, digital technology influences every aspect of our lives. From the way we communicate to how we learn, shop, and access services — the digital revolution is transforming societies rapidly.
+      It enhances convenience, boosts productivity, and brings distant corners of the world closer. But it also raises concerns about privacy, addiction, and job displacement. Understanding this dual nature is crucial as we embrace this shift.
+    </p>
+  </header>
+
+  <section class="card-container">
+    <!-- Card 1 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://media.istockphoto.com/id/1349104991/photo/e-learning-online-education-concept.jpg?s=612x612&w=0&k=20&c=dta2tnpaC95FdcqSy4bpp2tLzBQDTCNajXeLxNsKXoo=" alt="Education">
+        </div>
+        <div class="flip-card-back">
+          <div>
+            <h3>Digital in Education</h3>
+            <p>Virtual classrooms and e-learning platforms have made education more accessible than ever before.</p>
+          </div>
+          <button class="read-more-btn" onclick="event.stopPropagation(); toggleExtra('edu')">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://cdn.prod.website-files.com/65f6ba266e0d7c8372e4b4cf/65fbb9add3e729081c9ad930_Banner-image.webp" alt="Healthcare">
+        </div>
+        <div class="flip-card-back">
+          <div>
+            <h3>Digital Healthcare</h3>
+            <p>Telemedicine and health apps allow remote diagnosis and better personal health management.</p>
+          </div>
+          <button class="read-more-btn" onclick="event.stopPropagation(); toggleExtra('health')">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://thumbs.dreamstime.com/b/chatgpt-businessman-use-ai-to-help-work-learning-artificial-intelligence-business-modern-technology-internet-networking-278933011.jpg" alt="Communication">
+        </div>
+        <div class="flip-card-back">
+          <div>
+            <h3>Smart Communication</h3>
+            <p>Real-time messaging, video calls, and social platforms have changed how we stay in touch.</p>
+          </div>
+          <button class="read-more-btn" onclick="event.stopPropagation(); toggleExtra('comm')">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extra Info Sections -->
+  <section class="extra-content" id="edu">
+    <p>
+      E-learning tools now integrate AI, gamification, and immersive content to boost retention and engagement. Rural areas benefit from mobile-based platforms, bridging educational gaps and offering self-paced learning.
+    </p>
+  </section>
+
+  <section class="extra-content" id="health">
+    <p>
+      Wearables track vitals, while AI algorithms assist in diagnosing diseases early. Mental health support apps and 24/7 online consultations have revolutionized care accessibility and early intervention.
+    </p>
+  </section>
+
+  <section class="extra-content" id="comm">
+    <p>
+      Businesses run on video conferencing and cloud platforms. Social media enables global connectivity, but also demands awareness of digital etiquette, information overload, and online safety.
+    </p>
+  </section>
+
+  <section class="conclusion">
+    <h2>Conclusion</h2>
+    <p>
+      Embracing digital technology responsibly is the need of the hour. By maximizing its benefits and minimizing its harms, we can shape a future where innovation meets ethics, and progress includes everyone.
+    </p>
+  </section>
+
+  <footer>
+    © 2025 SaiKet Systems Internship · Designed by Jayanth Mayur.H
+  </footer>
+
+  <script>
+    function toggleExtra(id) {
+      const section = document.getElementById(id);
+      section.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
