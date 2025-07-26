@@ -48,7 +48,7 @@ cd Saiket-Systems/Task\ 4\ Quiz App
 ```
 
 3. Open the HTML File:
-You can simply double-click the index1.html file, or use:
+You can simply double-click the index4.html file, or use:
 ```bash
 
 start index4.html    # Windows
