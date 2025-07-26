@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧠 Quiz Master</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-app">
+    <header>
+      <h1>🎓 Quiz Master</h1>
+      <div class="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+    </header>
+
+    <div id="start-screen" class="center">
+      <button class="btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div class="quiz-container" style="display: none;">
+      <h2 id="question">Question</h2>
+      <div id="options" class="fade"></div>
+      <button class="btn" onclick="submitAnswer()">Next</button>
+      <div id="feedback"></div>
+    </div>
+
+    <footer>
+      <p>Crafted with ❤️ by <strong>Jayanth Mayur.H</strong></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
