@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">NETFLIX</div>
+    <button class="signin-btn">Sign In</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows, and more.</h1>
+      <h2>Watch anywhere. Cancel anytime.</h2>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+      <div class="email-form">
+        <input type="email" id="emailInput" placeholder="Email address" />
+        <button onclick="submitEmail()">Get Started &gt;</button>
+      </div>
+      <p class="error-msg" id="errorMsg"></p>
+
+      <!-- 🆕 Movie Card Row -->
+      <div class="movie-row">
+        <h3>Popular on Netflix</h3>
+        <div class="movie-cards">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb8xupi_c_ornYk2Y4PaDKIx20Xy9PS1bshOu73qVKojzLmkpy-U2MC8R2jJZCFbU_mgTH" alt="Stranger Things" />
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTl6sB37QlR5nczz7EdqIGnSJImVW559wDdC-nh8wRZAMe2IRdmfL-J6ZGJhDFR-x1sxjml" alt="Money Heist" />
+          <img src="https://m.media-amazon.com/images/I/71niXI3lxlL._AC_UF1000,1000_QL80_.jpg" alt="Breaking Bad" />
+          <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrpQa4kPsu6vyXAGfOOHSuscIGwdQuxyOs0Lp-EndlqkhFdcxNPg0kt-lws9e49GAqx2wxRg" alt="The Witcher" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzKDOhOKsrp9aPcrtjdZbFkFtltZZfB_Nsq3oSmJVlSz7DFD7dNxsUl15UkYZv0maX96pv" alt="Wednesday" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Sections -->
+  <section class="info-section">
+    <div class="info-content">
+      <h2>📺 Enjoy on your TV</h2>
+      <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+    </div>
+  </section>
+
+  <section class="info-section alt">
+    <div class="info-content">
+      <h2>📱 Download your shows to watch offline</h2>
+      <p>Save your favorites easily and always have something to watch.</p>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <div class="info-content">
+      <h2>👨‍👩‍👧 Create profiles for kids</h2>
+      <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Netflix Clone UI by <strong>Jayanth Mayur.H</strong> | © <span id="year"></span></p>
+  </footer>
+
+  <!-- JS File -->
+  <script src="netflix.js"></script>
+</body>
+</html>
